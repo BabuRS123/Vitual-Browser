@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: firefox-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: firefox
+  template:
+    metadata:
+      labels:
+        app: firefox
+    spec:
+      containers:
+      - name: firefox-container
+        image: babuk832856/virtualbrowser:latest # Replace with your actual Docker image name
+        ports:
+        - containerPort: 8080 # You can change this based on what port Firefox runs on
+
