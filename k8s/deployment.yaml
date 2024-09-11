@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: firefox-container
-        image: babuk832856/virtualbrowser:latest # Replace with your actual Docker image name
+        image: babuk832856/virtualbrowser1:latest # Replace with your actual Docker image name
         ports:
         - containerPort: 8080 # You can change this based on what port Firefox runs on
 
